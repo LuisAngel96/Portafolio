@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon:XROT,YROT@-45..45,-45..45&display=swap');
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Tilt Neon", sans-serif;
+}
+
+header{
+    background-color: aquamarine; 
+    padding: 1.5em 0;
+    width: 100%;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.name_title{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+.nav_list{
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav_item{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(116, 86, 86);
+    padding: 0.75em 1em;
+    border-radius: 5em;
+    cursor: pointer;
+    gap: 0.2em;
+}
+
+.nav_item:hover{
+    background-color: rgb(197, 197, 216);
+    scale: 1.2;
+    transition: 0.5s;
+}
