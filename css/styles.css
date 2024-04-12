@@ -385,6 +385,11 @@ header{
     transform: rotate(90deg);
 }
 
+/* .academic_item:nth-child(4) img{
+    height: 50px;
+    transform: rotate(90deg);
+} */
+
 /* ------------------------- EXPERIENCE CONTAINER ------------------------- */
 
 .experience_container{
@@ -418,13 +423,14 @@ header{
     flex-direction: column;
     /* height: 200px; */
     /* justify-content: space-around; */
+    margin-bottom: 2em;
     align-items: center;
 }
 
 .experience_item{
     font-size: 1.5rem;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     /* width: 70%; */
 }
 
@@ -433,9 +439,18 @@ header{
     flex-direction: column;
 }
 
-.experience_item_container p:nth-child(1){
+.experience_item_title{
     font-weight: bold;
     margin-bottom: 1em;
+}
+
+.experience_item_title::before{
+    content: "★ ";
+}
+
+
+.experience_item_container p{
+    font-size: 1.2rem;
 }
 
 .experience_item_container p:nth-child(2){
@@ -491,6 +506,7 @@ header{
 }
 
 .btn_demo{
+    text-align: center;
     font-size: 1.2rem;
     width: 160px;;
     border: 3px solid white;
@@ -506,6 +522,5 @@ header{
     scale: 1.2;
     transition: 0.5s ease;
     background: radial-gradient(#f9ce3457, #ee2a2a63, #6228d769);
-
 }
 
