@@ -423,7 +423,8 @@ header{
     flex-direction: column;
     /* height: 200px; */
     /* justify-content: space-around; */
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
     align-items: center;
 }
 
@@ -524,3 +525,9 @@ header{
     background: radial-gradient(#f9ce3457, #ee2a2a63, #6228d769);
 }
 
+.arrow_direction{
+    margin: 0 auto;
+    width: 8%;
+    /* height: 50px; */
+    transform: rotate(180deg);
+}
