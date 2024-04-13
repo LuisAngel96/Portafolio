@@ -12,7 +12,6 @@
 }
 
 body{
-    /* font-family: "Tilt Neon", sans-serif; */
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1rem;
 }
@@ -100,8 +99,6 @@ header{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    /* height: 250px; */
-    border: 5px solid green;    
 }
 
 .row{
@@ -289,7 +286,6 @@ header{
     display: flex;
     height: 150px;
     justify-content: space-between;
-    /* gap: 1em; */
 }
 
 .hobbies_item{
@@ -318,7 +314,6 @@ header{
 
 .hobbies_item:nth-child(3) img:hover{
     transform: rotate(-45deg);
-    /* transform-origin: top bottom; */
 }
 
 .hobbies_item:nth-child(4) img:hover{
@@ -334,7 +329,6 @@ header{
 
 .academic_container{
     max-width: 1200px;
-    /* height: 400px; */
     display: flex;
     flex-direction: column;
     padding: 50px 0;
@@ -491,7 +485,6 @@ header{
     border-radius: 5em;
     cursor: pointer;
     box-shadow: 1px 2px 10px #101010;
-
 }
 
 .btn_github:hover{
@@ -546,6 +539,7 @@ header{
 .contact_container_title{
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 1em;
 }
 
 .info_container{
@@ -553,36 +547,38 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
+    box-shadow: 1px 2px 22px #101010;
+    border-radius: 5%;
     width: 40%;
     height: 500px;
     text-align: center;
+    margin-right: 2em;
 }
 
 .info_container h3{
     font-size: 1.5rem;
-}
-
-.info_container p{
-    font-size: 1.2rem;
+    margin-bottom: 0.5em;
 }
 
 .contact_img{
+    box-shadow: 1px 2px 22px #101010;
+    border-radius: 100%;
     width: auto;
     height: 200px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .contact{
     display: flex;
     flex-direction: column;
+    font-size: 1.2rem;
     margin-top: 1em;
 }
 
 .contact_item_container{
     display: flex;
     align-items: center;
-    background-color: aquamarine;
+    margin-bottom: 0.5em;
 }
 
 .contact_item_container img{
@@ -595,8 +591,6 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(255, 251, 0);
     width: 50%;
     height: 500px;
     text-align: center;
@@ -605,15 +599,34 @@ header{
 .form_container_texts{
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
-    width: 80%;
-    
+    margin-bottom: 0.5em;   
+}
+
+.form_container_texts label{
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.input_padron{
+    margin: 0 auto;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    width: 100%;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    border-top-width: 5px;
+    box-shadow: 1px 2px 10px #101010;
+}
+
+#mensaje{
+    resize: none;
 }
 
 .enviarFormulario {
-    width: 70%;
+    width: 50%;
     padding: 15px 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: black;
     background: none;
@@ -621,19 +634,5 @@ header{
     border-radius: 20px;
     border-top-width: 10px;
     border-color: black;
-    /* transition: 2s all; */
     cursor: pointer;
-}
-
-.input_padron{
-    /* display: flex;
-    flex-direction: column; */
-    margin: 0 auto;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 20px;
-    border-top-width: 5px;
-    /* transition: 1s all; */
 }
