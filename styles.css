@@ -14,6 +14,7 @@
 body{
     font-family: "Pixelify Sans", sans-serif;
     font-size: 1rem;
+    background-color: #e8ecf6;
 }
 
 /* ------------------------- HEADER SECTION ------------------------- */
@@ -21,6 +22,8 @@ body{
 header{
     padding: 1.5em 0;
     width: 100%;
+    background: #ccd7eb;
+    box-shadow: 22px 23px 110px #101010;
 }
 
 .nav_container{
@@ -52,7 +55,7 @@ header{
 .nav_item{
     display: flex;
     align-items: center;
-    border: 3px solid white;
+    background-color: #ccd7eb;
     padding: 0.75em 1em;
     border-radius: 5em;
     cursor: pointer;
@@ -60,10 +63,9 @@ header{
 }
 
 .nav_item:hover{
-    background-color: rgb(197, 197, 216);
+    background-color: #a0b7d9;
     scale: 1.2;
-    transition: 0.5s ease;
-    background: radial-gradient(#f9ce3457, #ee2a2a63, #6228d769);
+    transition: 0.5s;
     box-shadow: 1px 2px 10px #101010;
 }
 
@@ -84,11 +86,14 @@ header{
 
 /* --------------------- SOBRE MI CONTAINER --------------------- */
 
+main{
+    margin-bottom: 3em;
+}
+
 .sobre_mi_container{
     display: flex;
     flex-direction: column;
     padding: 70px 0;
-    background-color: lightsteelblue;
 }
 
 .sobre_mi{
@@ -152,9 +157,8 @@ header{
     align-items: center;
     width: 70px;
     height: 70px;
-    background-color: white;
+    background-color: #e8ecf6;
     border-radius: 50%; 
-    border: 3px solid white;
     overflow: hidden;
 }
 
@@ -206,9 +210,9 @@ header{
     display: flex;
     flex-direction: column;
     padding: 50px 0;
-    background-color: lightsteelblue;
     margin: 0 auto;
-    margin-top: 2em;
+    background: #ccd7eb;   
+    box-shadow: 22px 23px 110px #101010;
 }
 
 .texts_skills_container{
@@ -217,7 +221,7 @@ header{
     justify-content: center;
     text-align: center;
     font-size: 2rem;
-    width: 80%;
+    width: 80%;  
 }
 
 .texts_skills_container h2{
@@ -226,7 +230,7 @@ header{
 
 .skills_container_list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skills_item{
@@ -263,9 +267,9 @@ header{
     display: flex;
     flex-direction: column;
     padding: 50px 0;
-    background-color: lightsteelblue;
     margin: 0 auto;
     margin-top: 2em;
+    box-shadow: 22px 23px 110px #101010;
 }
 
 .texts_hobbies_container{
@@ -284,7 +288,7 @@ header{
 .hobbies_container_list{
     display: flex;
     height: 150px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .hobbies_item{
@@ -330,9 +334,10 @@ header{
     display: flex;
     flex-direction: column;
     padding: 50px 0;
-    background-color: lightsteelblue;
     margin: 0 auto;
     margin-top: 2em;
+    background: #ccd7eb;
+    box-shadow: 22px 23px 110px #101010;
 }
 
 .text_academic_container{
@@ -342,6 +347,7 @@ header{
     text-align: center;
     font-size: 2rem;
     width: 80%;
+    
 }
 
 .text_academic_container h2{
@@ -350,9 +356,9 @@ header{
 
 .academic_container_list{
     display: flex;
-    /* height: 200px; */
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .academic_item{
@@ -382,16 +388,16 @@ header{
     display: flex;
     flex-direction: column;
     padding: 50px 0;
-    background-color: lightsteelblue;
     margin: 0 auto;
     margin-top: 2em;
+    
+    
 }
 
 .text_experience_container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* text-align: center; */
     font-size: 2rem;
     width: 80%;
 }
@@ -407,10 +413,16 @@ header{
     margin-bottom: 1.5em;
     margin-top: 1em;
     align-items: center;
-    box-shadow: 1px 2px 10px #101010;
+    box-shadow: 22px 23px 110px #101010;
     padding: 30px;
     border-radius: 50px;
-    background-color:lightblue;
+}
+
+.experience_container_list:nth-child(2),
+.experience_container_list:nth-child(6),
+.experience_container_list:nth-child(10),
+.experience_container_list:nth-child(14){
+    background: #ccd7eb;
 
 }
 
@@ -418,7 +430,6 @@ header{
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    /* width: 70%; */
 }
 
 .experience_item_container{
@@ -474,18 +485,21 @@ header{
 .btn_github{
     font-size: 1.2rem;
     width: 160px;
-    border: 3px solid white;
     padding: 0.75em 1em;
     border-radius: 5em;
     cursor: pointer;
     box-shadow: 1px 2px 10px #101010;
+    background: #ccd7eb;
+    border: 2px solid #4a72ad;
+    border-left-width: 10px;
 }
 
 .btn_github:hover{
-    background-color: rgb(197, 197, 216);
+    background-color: #ccd7eb;
+    border: 2px solid #1a2337;
+    border-left-width: 10px;
     scale: 1.2;
     transition: 0.5s ease;
-    background: radial-gradient(#f9ce3457, #ee2a2a63, #6228d769);
 }
 
 .btn_github:active{
@@ -497,37 +511,41 @@ header{
     text-align: center;
     font-size: 1.2rem;
     width: 160px;;
-    border: 3px solid white;
     padding: 0.75em 1em;
     border-radius: 5em;
     cursor: pointer;
     box-shadow: 1px 2px 10px #101010;
     margin-top: 1em;
+    background: #ccd7eb;
+    background: #ccd7eb;
+    border: 2px solid #4a72ad;
+    border-left-width: 10px;
 }
 
 .btn_demo:hover{
-    background-color: rgb(197, 197, 216);
     scale: 1.2;
     transition: 0.5s ease;
-    background: radial-gradient(#f9ce3457, #ee2a2a63, #6228d769);
+    background-color: #ccd7eb;
+    border: 2px solid #1a2337;
+    border-left-width: 10px;
+
 }
 
 .arrow_direction{
     margin: 0 auto;
     width: 8%;
-    /* height: 50px; */
     transform: rotate(180deg);
 }
 
+/* ------------------------- CONTACT CONTAINER ------------------------- */
+
+
 .contact_section{
-    /* max-width: 1200px; */
     display: flex;
     flex-direction: column;
     padding: 50px 0;
-    /*border: 2px solid red;*/
-    background-color: lightsteelblue;
-    margin: 0 auto;
-    margin-top: 2em;
+    background: #ccd7eb;
+    box-shadow: 22px 23px 110px #101010;
 }
 
 .contact_container_title{
@@ -547,7 +565,7 @@ header{
     height: 500px;
     text-align: center;
     margin-right: 2em;
-    background-color: khaki;
+    background-color: #a0b7d9;
 }
 
 .info_container h3{
@@ -608,10 +626,14 @@ header{
     margin-top: 0.5em;
     width: 100%;
     padding: 10px 25px;
-    border: 1px solid black;
+    border: 1px solid #1a2337;
     border-radius: 20px;
     border-top-width: 5px;
     box-shadow: 1px 2px 10px #101010;
+}
+
+.input_padron:hover{
+    background-color: #e8ecf6;
 }
 
 #mensaje{
@@ -625,9 +647,14 @@ header{
     font-weight: bold;
     color: black;
     background: none;
-    border: 2px solid black;
+    border: 2px solid #1a2337;
     border-radius: 20px;
     border-top-width: 10px;
-    border-color: black;
     cursor: pointer;
+}
+
+footer{
+    margin: 1em 0;
+    font-size: 1.2rem;
+    text-align: center;
 }
