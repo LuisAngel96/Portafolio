@@ -711,3 +711,30 @@ footer{
     font-size: 1.2rem;
     text-align: center;
 }
+
+/* Media queries para celulares, pantallas mayores que 320px e iguales o menores que 599px */
+
+@media(min-width:320px) and (max-width:599px){
+    header{
+        width: 100%;
+    }
+
+    .nav_container{
+        flex-direction: column;
+        align-items: center;
+        font-size: .8rem;
+    }
+
+    .name_title{
+        font-size: 1.6rem;
+        margin-bottom: .5em;
+    }
+
+    .nav_list{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5em;
+    }
+
+    
+}
