@@ -36,7 +36,7 @@
                 <div class="container row">
                     <div class="text_container">
                         <h2>Hola, mi nombre es Luis Angel Martinez</h2>
-                        <p>Soy formado en la carrera de Arquitectura, actualmente en busca de nuevos conocimientos y mejores oportunidades, me encuentro participando del proyecto <strong>Oracle ONE en Alura Latam</strong></p>
+                        <p>Soy formado en la carrera de Arquitectura, actualmente en busca de nuevos conocimientos y mejores oportunidades, me encuentro participando del proyecto <strong>Oracle ONE en Alura Latam.</strong></p>
                     </div>
                     
                     <div class="img_container">
@@ -93,6 +93,8 @@
                 <div class="text_academic_container">
                     <h2>Formación Académica</h2>
                     <ul class="academic_container_list">
+                        <li class="academic_item">Utadeo<img src="img/utadeo.jpg" alt="">Arquitectura <br><br> Ene. 2019 <br> ↓ <br> Dic. 2021</li>
+                        <li class="academic_item"><img src="img/arrow.png" alt=""></li>
                         <li class="academic_item">Egg Live<img src="img/eggLive.jpg" alt="">Programación Web desde Cero <br><br> Agos. 2023 <br> ↓ <br> Sept. 2023</li>
                         <li class="academic_item"><img src="img/arrow.png" alt=""></li>
                         <!-- <li class="academic_item">FrontEnd Mentor<img src="img/frontendmentor.jpg" alt="">Challenges frond end <br><br> Mar. 2024 <br> ↓ <br> Presente</li>
@@ -308,17 +310,17 @@
 
                     <div class="form_container_texts">
     
-                        <label for="nombreapellido">Nombre y apellido</label>
-                        <input type="text" id="nombreapellido" class="input_padron" required>
+                        <label for="nombreapellido">Nombre y apellido</label><label id="alert_msj" for="nombreapellido">El campo nombre no puede estar vacío.</label>
+                        <input type="text" id="nombreapellido" class="input_padron">
     
-                        <label for="correoelectronico">Correo Electronico</label>
-                        <input type="email" id="correoelectronico" class="input_padron" required placeholder="email@dominio.com"> 
+                        <label for="correoelectronico">Correo Electronico</label><label id="alert_msj" for="correoelectronico">El campo e-mail debe estar en el formato: texto@texto.com y no puede estar vacío.</label>
+                        <input type="email" id="correoelectronico" class="input_padron" placeholder="email@dominio.com"> 
     
-                        <label for="telefono">Asunto</label>
-                        <input type="tel" id="telefono" class="input_padron" required>
+                        <label for="asunto">Asunto</label><label id="alert_msj" for="asunto">El campo asunto no puede estar vacío.</label>
+                        <input type="tel" id="telefono" class="input_padron">
     
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="" id="mensaje" cols="5" rows="5" class="input_padron" required></textarea>
+                        <label for="mensaje">Mensaje</label><label id="alert_msj" for="mensaje">El campo mensaje no puede estar vacío y debe contener maximo 300 caracteres</label>
+                        <textarea name="" id="mensaje" cols="5" rows="5" class="input_padron"></textarea>
                     
                     </div>
 
