@@ -715,26 +715,220 @@ footer{
 /* Media queries para celulares, pantallas mayores que 320px e iguales o menores que 599px */
 
 @media(min-width:320px) and (max-width:599px){
-    header{
-        width: 100%;
-    }
+
+    /* ------------ Header ------------ */
 
     .nav_container{
-        flex-direction: column;
+        width: 100%;
         align-items: center;
         font-size: .8rem;
+        padding: 0 1.5em 0 1em;
     }
 
     .name_title{
-        font-size: 1.6rem;
-        margin-bottom: .5em;
-    }
-
-    .nav_list{
-        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
-        gap: .5em;
+        font-size: 1.3rem;
+    }
+    
+    .name_title:hover{
+        transform: rotateY(0deg);
+        cursor: default;
+        scale: 1;
+    }
+    
+    .nav_list{
+        justify-content: flex-end;
     }
 
+    .nav_item:nth-child(1),
+    .nav_item:nth-child(2),
+    .nav_item:nth-child(3),
+    .nav_item:nth-child(4){
+        display: none;
+    }
     
+    /* ------------ About my ------------ */
+
+    .sobre_mi_container{
+        padding-bottom: 35px;
+    }
+
+    .text_container{
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+
+    .text_container h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .text_container p{
+        text-align: justify;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .logos_container{
+        margin-top: 1.5em;
+        justify-content: center;
+    }
+
+    /* ------------ Skills ------------ */
+
+    .texts_skills_container{
+        width: 100%;
+    }
+
+    .texts_skills_container h2{
+        font-size: 1.5rem;
+    }
+
+    .skills_container_list{
+        gap: 0.5em;
+    }
+
+    .skills_item{
+        font-size: 1.2rem;
+    }
+
+    .skills_item img{
+        height: 70px;
+    }
+
+    /* ------------ Hobbies ------------ */
+
+    .texts_hobbies_container{
+        width: 100%;
+    }
+
+    .texts_hobbies_container h2{
+        font-size: 1.5rem;
+    }
+
+    .hobbies_container_list{
+        gap: .5em;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .hobbies_item{
+        font-size: 1.2rem;
+        width: 40%;
+    }
+
+    /* ------------ Academic Formation ------------ */
+
+    .text_academic_container h2{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .academic_container_list{
+        flex-direction: column;
+    }
+
+    .academic_item{
+        width: auto;
+        font-size: 1.2rem;
+    }
+
+    .academic_item:nth-child(2) img{
+        height: 50px;
+        transform: rotate(180deg);
+        margin: 2em 0;
+    } 
+
+    .academic_item:nth-child(4) img{
+        height: 50px;
+        transform: rotate(180deg);
+        margin: 2em 0;
+    } 
+
+    /* ------------ Professional Experience ------------ */
+
+    .experience_container{
+        margin-top: 0;
+    }
+
+    .text_experience_container{
+        height: auto;
+        width: 100%;
+    }
+
+    .text_experience_container h2{
+        font-size: 1.5rem;
+    }
+
+    .experience_container_list{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience_item{
+        flex-direction: column;
+    }
+
+    .experience_item:nth-child(1) img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+
+    .experience_item_title{
+        font-size: 1.2rem;
+    }
+
+    .experience_item_container:nth-child(2) img{
+        width: auto;
+        height: 50px;
+    }
+
+    .btn_github,
+    .btn_demo{
+        text-align: center;
+        font-size: 1rem;
+        width: 60%;
+        margin: 5px auto;
+    }
+
+    .arrow_direction{
+        width: 20%;
+        margin: 1em auto;
+    }
+
+    /* ------------ Contact Section ------------ */
+
+    /* .contact_section{
+        width: 100%;
+    } */
+    
+    .contact_container_title{
+        font-size: 1.5rem;
+    }
+
+    .info_container{
+        width: 100%;
+        height: 420px;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+
+    .info_container h3{
+        font-size: 1.3rem;
+    }
+
+    .contact{
+        font-size: 1rem;
+    }
+
+    .form_container{
+        width: 100%;
+    }
+
 }
