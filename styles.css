@@ -121,9 +121,23 @@ main{
     margin-right: 2em;
 }
 
-.text_container h1{
+.text_container h2{
     font-size: 3rem;
-    margin-bottom: 1em;
+    margin-bottom: 1em;   
+}
+
+.text_container h2, p{
+    animation: typing 3s steps(32);
+}
+
+@keyframes typing {
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
 }
 
 .text_container p strong{
@@ -161,11 +175,9 @@ main{
     align-items: center;
     width: 70px;
     height: 70px;
-    background-color: #e8ecf6;
     border-radius: 50%; 
     overflow: hidden;
     transition: 1s;
-
 }
 
 .logos_item:nth-child(1):hover{
@@ -567,8 +579,7 @@ main{
     height: 500px;
     text-align: center;
     margin-right: 2em;
-    background-color: #a0b7d9;
-}
+    background-color: #e8ecf6;}
 
 .info_container h3{
     font-size: 1.5rem;
