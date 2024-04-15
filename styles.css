@@ -696,7 +696,6 @@ main{
     border-radius: 20px;
     border-top-width: 10px;
     cursor: pointer;
-    filter: blur(1.5px);
     margin: 0 auto;
     transition: 1s;
 }
