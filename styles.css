@@ -37,31 +37,37 @@ header{
 .name_title{
     display: flex;
     align-items: center;
-    font-size: 2rem;
-    transition: 2s;
+    text-align: center;
+    font-size: 1.5rem;
+    animation: rotate 3s steps(64) infinite;
 }
 
-.name_title:hover{
-    transform: rotateY(360deg);
-    cursor: default;
-    scale: 1.5;
+@keyframes rotate {
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(360deg);
+    }
 }
 
 .nav_list{
     display: flex;
-    gap: 1.5em;
+    gap: 1.2em;
 }
 
 .nav_item{
     display: flex;
     align-items: center;
     background-color: #ccd7eb;
-    padding: 0.75em 1em;
+    padding: 0.5em .8em;
     border-radius: 5em;
     cursor: pointer;
     gap: 0.3em;
     transition: 0.5s;
     text-align: center;
+    /* border: 2px solid red; */
 }
 
 .nav_item:hover{
@@ -85,19 +91,19 @@ header{
 
 /* ------------------------- MAIN SECTION ------------------------- */
 
-/* --------------------- SOBRE MI CONTAINER --------------------- */
+/* --------------------- ABOUT MY CONTAINER --------------------- */
 
 main{
     margin-bottom: 3em;
 }
 
-.sobre_mi_container{
+.about_my_container{
     display: flex;
     flex-direction: column;
     padding: 70px 0;
 }
 
-.sobre_mi{
+.about_my{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -693,7 +699,7 @@ main{
     font-weight: bold;
     color: black;
     background: none;
-    border: 2px solid #371a1a;
+    border: 2px solid #1a2337;
     border-radius: 20px;
     border-top-width: 10px;
     cursor: pointer;
@@ -745,7 +751,8 @@ footer{
     .nav_item:nth-child(1),
     .nav_item:nth-child(2),
     .nav_item:nth-child(3),
-    .nav_item:nth-child(4){
+    .nav_item:nth-child(4),
+    .nav_item:nth-child(5){
         display: none;
     }
     
@@ -951,6 +958,10 @@ footer{
         scale: 1;
     }
     
+    .name_title h1{
+        text-align: center;
+    }
+
     .nav_list{
         justify-content: flex-end;
     }
@@ -958,7 +969,8 @@ footer{
     .nav_item:nth-child(1),
     .nav_item:nth-child(2),
     .nav_item:nth-child(3),
-    .nav_item:nth-child(4){
+    .nav_item:nth-child(4),
+    .nav_item:nth-child(5){
         display: none;
     }
     
@@ -1123,8 +1135,6 @@ footer{
 
     .container{
         flex-direction: row;
-        /* justify-content: center;
-        align-items: center; */
     }
 
     .contact_container_title{
