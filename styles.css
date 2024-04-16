@@ -61,6 +61,7 @@ header{
     cursor: pointer;
     gap: 0.3em;
     transition: 0.5s;
+    text-align: center;
 }
 
 .nav_item:hover{
@@ -761,11 +762,7 @@ footer{
 
     .text_container h2{
         text-align: center;
-        font-size: 1.5rem;
-    }
-
-    .text_container p{
-        text-align: justify;
+        font-size: 1.8rem;
     }
 
     .row{
@@ -898,7 +895,7 @@ footer{
     }
 
     .arrow_direction{
-        width: 20%;
+        width: 15%;
         margin: 1em auto;
     }
 
@@ -927,4 +924,229 @@ footer{
         width: 100%;
     }
 
+}
+
+/* Media queries para tablets, pantallas mayores que 600px e iguales o menores que 1024px */
+
+@media(min-width:600px) and (max-width:1024px){
+    
+    /* ------------ Header ------------ */
+
+    .nav_container{
+        width: 100%;
+        align-items: center;
+        font-size: 1rem;
+        padding: 0 1.5em 0 1em;
+    }
+
+    .name_title{
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    
+    .name_title:hover{
+        transform: rotateY(0deg);
+        cursor: default;
+        scale: 1;
+    }
+    
+    .nav_list{
+        justify-content: flex-end;
+    }
+
+    .nav_item:nth-child(1),
+    .nav_item:nth-child(2),
+    .nav_item:nth-child(3),
+    .nav_item:nth-child(4){
+        display: none;
+    }
+    
+    /* ------------ About my ------------ */
+
+    .sobre_mi_container{
+        padding-bottom: 35px;
+    }
+
+    .text_container{
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+
+    .text_container h2{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .text_container p{
+        font-size: 1.3rem;
+        margin-right: 1em;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .logos_container{
+        margin-top: 1em;
+        justify-content: center;
+    }
+    
+    /* ------------ Skills ------------ */
+
+    .texts_skills_container{
+        width: 100%;
+    }
+
+    .texts_skills_container h2{
+        font-size: 1.5rem;
+    }
+
+    .skills_container_list{
+        gap: 0.5em;
+    }
+
+    .skills_item{
+        font-size: 1.2rem;
+    }
+
+    .skills_item img{
+        height: 70px;
+    }
+
+    /* ------------ Hobbies ------------ */
+
+    .texts_hobbies_container{
+        width: 100%;
+    }
+
+    .texts_hobbies_container h2{
+        font-size: 1.5rem;
+    }
+
+    .hobbies_container_list{
+        gap: .5em;
+        /* flex-wrap: wrap; */
+        height: auto;
+    }
+
+    .hobbies_item{
+        font-size: 1.2rem;
+        width: 40%;
+    }
+
+    /* ------------ Academic Formation ------------ */
+
+    .text_academic_container h2{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .academic_container_list{
+        flex-direction: column;
+    }
+
+    .academic_item{
+        width: auto;
+        font-size: 1.2rem;
+    }
+
+    .academic_item:nth-child(2) img{
+        height: 50px;
+        transform: rotate(180deg);
+        margin: 2em 0;
+    } 
+
+    .academic_item:nth-child(4) img{
+        height: 50px;
+        transform: rotate(180deg);
+        margin: 2em 0;
+    }
+    
+    /* ------------ Professional Experience ------------ */
+
+    .experience_container{
+        margin-top: 2em;
+    }
+
+    .text_experience_container{
+        height: auto;
+        width: 100%;
+    }
+
+    .text_experience_container h2{
+        font-size: 1.5rem;
+    }
+
+    .experience_container_list{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience_item:nth-child(1) img{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        margin-right: 1em;
+    }
+
+    .experience_item_title{
+        font-size: 1.5rem;
+    }
+
+    .experience_item_container:nth-child(2) img{
+        width: auto;
+        height: 50px;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .experience_item_container p{
+        font-size: 1.2rem;
+    }
+
+    .btn_github,
+    .btn_demo{
+        text-align: center;
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    .arrow_direction{
+        width: 8%;
+        margin: 1em auto;
+    }
+
+    /* ------------ Contact Section ------------ */
+
+    .container{
+        flex-direction: row;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .contact_container_title{
+        font-size: 1.5rem;
+    }
+
+    .info_container{
+        width: 100%;
+        height: 420px;
+        margin: 0;
+    }
+
+    .info_container h3{
+        font-size: 1.3rem;
+    }
+
+    .contact{
+        font-size: 1rem;
+    }
+
+    .form_container{
+        margin-left: 1em;
+        width: 100%;
+    }
 }
