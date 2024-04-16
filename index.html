@@ -284,7 +284,7 @@
 
         <!-- Contact Section -->
 
-        <section id="contact" class="contact_section">
+        <section class="contact_section">
 
             <h2 class="contact_container_title">Contacto</h2>
 
@@ -308,7 +308,7 @@
                     </div>
                 </div>
 
-                <form class="form_container">
+                <form id="contact_form" class="form_container">
 
                     <div class="form_container_texts">
     
@@ -319,14 +319,14 @@
                         <input type="email" id="correoelectronico" class="input_padron" placeholder="email@dominio.com"> 
     
                         <label for="asunto">Asunto</label><label id="alert_msj" for="asunto">El campo asunto no puede estar vacío.</label>
-                        <input type="tel" id="telefono" class="input_padron">
+                        <input type="asunto" id="text_asunto" class="input_padron">
     
                         <label for="mensaje">Mensaje</label><label id="alert_msj" for="mensaje">El campo mensaje no puede estar vacío y debe contener maximo 300 caracteres</label>
                         <textarea name="" id="mensaje" cols="5" rows="5" class="input_padron"></textarea>
                     
                     </div>
 
-                    <button type="submit" class="enviarFormulario" disabled>Enviar Formulario</button>
+                    <button type="submit" id="btn_enviar" class="enviarFormulario" disabled>Enviar Formulario</button>
     
                 </form>
 
