@@ -284,7 +284,7 @@
 
         <!-- Contact Section -->
 
-        <section class="contact_section">
+        <section id="contact_form" class="contact_section">
 
             <h2 class="contact_container_title">Contacto</h2>
 
@@ -308,20 +308,20 @@
                     </div>
                 </div>
 
-                <form id="contact_form" class="form_container">
+                <form class="form_container">
 
                     <div class="form_container_texts">
     
-                        <label for="nombreapellido">Nombre y apellido</label><label id="alert_msj" for="nombreapellido">El campo nombre no puede estar vacío.</label>
+                        <label for="nombreapellido">Nombre y apellido</label><span id="alert_nombre" for="nombreapellido">El campo nombre no puede estar vacío.</span>
                         <input type="text" id="nombreapellido" class="input_padron">
     
-                        <label for="correoelectronico">Correo Electronico</label><label id="alert_msj" for="correoelectronico">El campo e-mail debe estar en el formato: texto@texto.com y no puede estar vacío.</label>
+                        <label for="correoelectronico">Correo Electronico</label><span id="alert_correo" for="correoelectronico">El campo e-mail debe estar en el formato: texto@texto.com y no puede estar vacío.</span>
                         <input type="email" id="correoelectronico" class="input_padron" placeholder="email@dominio.com"> 
     
-                        <label for="asunto">Asunto</label><label id="alert_msj" for="asunto">El campo asunto no puede estar vacío.</label>
+                        <label for="asunto">Asunto</label><span id="alert_asunto" for="asunto">El campo asunto no puede estar vacío.</span>
                         <input type="asunto" id="text_asunto" class="input_padron">
     
-                        <label for="mensaje">Mensaje</label><label id="alert_msj" for="mensaje">El campo mensaje no puede estar vacío y debe contener maximo 300 caracteres</label>
+                        <label for="mensaje">Mensaje</label><span id="alert_msj" for="mensaje">El campo mensaje no puede estar vacío y debe contener maximo 300 caracteres</span>
                         <textarea name="" id="mensaje" cols="5" rows="5" class="input_padron"></textarea>
                     
                     </div>
@@ -340,6 +340,8 @@
     <footer>
         <p class="copyright">&copy Copyright Luis Martinez <br> 2024</p>
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
