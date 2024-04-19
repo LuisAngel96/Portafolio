@@ -650,7 +650,6 @@ main{
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    height: 500px;
     text-align: center;
 }
 
@@ -671,6 +670,7 @@ main{
 #alert_asunto,
 #alert_msj{
     display: none;
+    text-align: left;
     font-size: .8rem;
     margin-top: 0.3em;
 }
@@ -681,7 +681,7 @@ main{
     margin-top: 0.5em;
     width: 100%;
     padding: 10px 25px;
-    border: 1px solid #371a1a;
+    border: 1px solid #1a2337;
     border-radius: 20px;
     border-top-width: 5px;
     box-shadow: 1px 2px 10px #101010;
@@ -712,7 +712,7 @@ main{
 
 .enviarFormulario:hover {
     background-color: #a0b7d9;
-    scale: 1.2;
+    /* scale: 1.2; */
     box-shadow: 1px 2px 10px #101010;
 }
 

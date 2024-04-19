@@ -308,25 +308,29 @@
                     </div>
                 </div>
 
-                <form class="form_container">
+                <form class="form_container" onsubmit="validarCampos(event)">
 
                     <div class="form_container_texts">
     
-                        <label for="nombreapellido">Nombre y apellido</label><span id="alert_nombre" for="nombreapellido">El campo nombre no puede estar vacío.</span>
+                        <label for="nombreapellido">Nombre y apellido</label>
+                        <p id="alert_nombre" for="nombreapellido">El campo nombre esta vacio. Ingrese su nombre por favor</p>
                         <input type="text" id="nombreapellido" class="input_padron">
     
-                        <label for="correoelectronico">Correo Electronico</label><span id="alert_correo" for="correoelectronico">El campo e-mail debe estar en el formato: texto@texto.com y no puede estar vacío.</span>
+                        <label for="correoelectronico">Correo Electronico</label>
+                        <p id="alert_correo" for="correoelectronico">El campo e-mail debe estar en el formato: email@dominio.com y no puede estar vacío.</p>
                         <input type="email" id="correoelectronico" class="input_padron" placeholder="email@dominio.com"> 
     
-                        <label for="asunto">Asunto</label><span id="alert_asunto" for="asunto">El campo asunto no puede estar vacío.</span>
+                        <label for="asunto">Asunto</label>
+                        <p id="alert_asunto" for="asunto">El campo asunto está vacio.</p>
                         <input type="asunto" id="text_asunto" class="input_padron">
     
-                        <label for="mensaje">Mensaje</label><span id="alert_msj" for="mensaje">El campo mensaje no puede estar vacío y debe contener maximo 300 caracteres</span>
+                        <label for="mensaje">Mensaje</label>
+                        <p id="alert_msj" for="mensaje">El campo mensaje está vacio.</p>
                         <textarea name="" id="mensaje" cols="5" rows="5" class="input_padron"></textarea>
                     
                     </div>
 
-                    <button type="submit" id="btn_enviar" class="enviarFormulario" disabled>Enviar Formulario</button>
+                    <button type="submit" id="btn_enviar" class="enviarFormulario">Enviar Formulario</button>
     
                 </form>
 

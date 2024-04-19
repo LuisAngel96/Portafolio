@@ -1,106 +1,151 @@
-// const formcontact = document.getElementById("contact_form");
+// Obtener los elementos de entrada y el botón
 
-// const inputs = document.querySelectorAll("#contact_form input");
+const nameInput = document.getElementById("nombreapellido");
+const email = document.getElementById("correoelectronico");
+const affair = document.getElementById("text_asunto");
+const message = document.getElementById("mensaje");
+const sent = document.getElementById("btn_enviar");
 
-// const mensaje = document.getElementById("mensaje");
+const alertName = document.getElementById("alert_nombre");
+const alertEmail = document.getElementById("alert_correo");
+const alertAsunto = document.getElementById("alert_asunto");
+const alertMessage = document.getElementById("alert_msj");
 
-// const btnEnviar = document.getElementById("btn_enviar");
 
-// const expresiones = {
-// 	nombre: /^[a-zA-ZÀ-ÿ0-9\s]{1,50}$/, // Letras y espacios, pueden llevar acentos.
-// 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-// 	asunto: /^[a-zA-ZÀ-ÿ0-9\s]{1,50}$/, // Letras y espacios, pueden llevar acentos.
-//     mensaje: /^[a-zA-ZÀ-ÿ0-9\s]{10,300}$/, // Letras y espacios, pueden llevar acentos.
-// }
+// Agregar event listener a los campos de entrada
 
-// const validarFormulario = (e) => {
+nameInput.addEventListener("input", verificarInputs);
+email.addEventListener("input", verificarInputs);
+affair.addEventListener("input", verificarInputs);
+message.addEventListener("input", verificarInputs);
 
-//     let nombreValido = expresiones.nombre.test(inputs[0].value.trim());
 
-//     let emailValido = expresiones.email.test(inputs[1].value.trim());
+// Verificar si los campos tienen contenido
+
+function verificarInputs() {
+
+    // VALIDACION NOMBRE
+
+    const isValidName = nameInput.value.trim() != "";
     
-//     let asuntoValido = expresiones.asunto.test(inputs[2].value.trim());
-
-//     let mensajeValido = expresiones.mensaje.test(mensaje.value.trim());
-
-//     if (nombreValido && emailValido && asuntoValido && mensajeValido){
-
-//         btnEnviar.disabled = false;
-
-//     } else {
-
-//         btnEnviar.disabled = true;
-
-//     }
-
-//     if (mensaje.name === "mensaje") {
-//         if (expresiones.mensaje.test(mensaje.value)) {
-//             mensaje.style.borderColor = "yellow";
-//             alert_msj.style.display = 'none';
-//             return true;
+    if (isValidName) {
         
-//         } else {
-//             mensaje.style.borderColor = "red";
-//             alert_msj.style.display = 'block';
-//         }
-//     }
+        alertName.style.display = "none";
+        nameInput.style.borderColor = "green";
 
-//     switch (e.target.name) {
-//         case "nombre": 
-//             if(nombreValido) {
-//                 e.target.style.borderColor = "yellow";
-//                 alert_nombre.style.display = "none";
-//                 return true;
-            
-//             } else {
-//                 e.target.style.borderColor = "red";
-//                 alert_nombre.style.display = "block";
-//             }
+    } else {
+        
+        alertName.style.display = "flex";
+        alertName.style.color = "red";
+        nameInput.style.borderColor = "red";
 
-//         break;
-//         case "email":
-//             if (emailValido) {
-//                 email.style.borderColor = "yellow";
-//                 alert_correo.style.display = "none";
-//                 return true;
-//             } else {
-//                 email.style.borderColor = "red";
-//                 alert_correo.style.display = 'block';    
-//             }
+    }
 
-//         break;
-//         case "asunto":
-//             if (asuntoValido) {
-//                 e.target.style.borderColor = "yellow";
-//                 alert_asunto.style.display = "none";
-//                 return true;
-//             } else {
-//                 e.target.style.borderColor = 'red';
-//                 alert_asunto.style.display = 'block';
-//             }
-//         break;
-//     }
-// }
+    // VALIDACION EMAIL
 
-// inputs.forEach((input) => {
-//     input.addEventListener('keyup',validarFormulario);
-//     input.addEventListener("blur", validarFormulario);
-// })
+    const isValidEmail = email.value.trim() != "";
 
-// mensaje.addEventListener("keyup", validarFormulario);
-// mensaje.addEventListener("blur", validarFormulario);
+    if (isValidEmail) {
+        
+        alertEmail.style.display = "none";
+        email.style.borderColor = "green";
 
-// formcontact.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     limpiarForm();
-//     alert("Su formulario de contacto ha sido enviado");
+    } else {
+        
+        alertEmail.style.display = "flex";
+        alertEmail.style.color = "red";
+        email.style.borderColor = "red";
+
+    }
+
+    // VALIDACION AFFAIR
+
+    const isValidAffair = affair.value.trim() != "";
+
+    if (isValidAffair) {
+        
+        alertAsunto.style.display = "none";
+        affair.style.borderColor = "green";
+
+    } else {
+        
+        alertAsunto.style.display = "flex";
+        alertAsunto.style.color = "red";
+        affair.style.borderColor = "red";
+
+    }
+
+    // VALIDACION MESSAGE
+
+    const  isValidMessage = message.value.trim() != "";
+
+    if (isValidMessage) {
+
+        alertMessage.style.display = "none";
+        message.style.borderColor = "green";
+
+    } else {
+
+        alertMessage.style.display = "flex";
+        alertMessage.style.color = "red";
+        message.style.borderColor = "red";
+    }
+
+    // COMPROBAMOS SI LOS INPUTS ESTAN LLENOS
+
+    const allInputAreOk = isValidName && isValidEmail && isValidAffair && isValidMessage;
+
+    if(allInputAreOk){
+        sent.disabled = false;
+        sent.style.borderColor = "green";
+    }
+
+    return isValidName && isValidEmail && isValidAffair && isValidMessage;
+
+    // or,  o -> ||  
+    // and, y -> && alguna es falsa -> false
+}
+
+function validarCampos (event) {
     
-// });
+    event.preventDefault();
 
-// const limpiarForm = () => {
-//     document.querySelector("#nombreapellido").value = "";
-//     document.querySelector("#correoelectronico").value = "";
-//     document.querySelector("#text_asunto").value = "";
-//     document.querySelector("#mensaje").value = "";
-// }
+    if (!verificarInputs()) {
 
+        sent.disabled = true;
+        sent.style.borderColor = "red";
+        event.preventDefault();
+
+
+    } else {
+
+        sent.disabled = false;
+        sent.style.borderColor = "green";
+        sent.innerText = "Mensaje enviado";
+        limpiarForm ();
+
+    }
+    return;
+}
+
+const limpiarForm = () => {
+
+    // LIMPIAMOS LOS INPUTS
+
+    nameInput.value = "";
+    email.value = "";
+    affair.value = "";
+    message.value = "";
+
+    // SE RESTABLECE EL COLOR DEL BORDE
+
+    nameInput.style.borderColor = "inherit";
+    email.style.borderColor = "inherit";
+    affair.style.borderColor = "inherit";
+    message.style.borderColor = "inherit";
+    sent.style.borderColor = "inherit";
+
+    // SE DESACTIVA EL BOTON ENVIAR
+
+    sent.disabled = true;
+}
