@@ -26,18 +26,23 @@ Users should be able to:
 
 ### Screenshot Desktop Design
 
-![](design/desktop-design.png)
+![](/img/desktop-design.png)
+
+### Screenshot Tablet Design
+
+![](/img/tablet-design.png)
 
 ### Screenshot Mobile Design
 
-![](design/mobile-design.png)
+![](/img/mobile-design.png)
+
 
 ### Links
 
 - Solution URL: [Github Solution](https://github.com/LuisAngel96/Portafolio)
 - Live Site URL: [Live site](https://luisangel96.github.io/Portafolio/)
 
-## My process
+## Process
 
 ### Built with
 
